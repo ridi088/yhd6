@@ -1,0 +1,78 @@
+name: yhd4
+description: "A new Flutter project."
+
+# 프로젝트를 pub.dev에 실수로 게시하지 않도록 방지
+publish_to: 'none'
+
+# 버전 및 빌드 번호 설정
+version: 2.0.0+11
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  intl: ^0.19.0
+  firebase_auth: ^5.3.1
+  firebase_core: ^3.6.0
+  cloud_firestore: ^5.4.4
+  firebase_analytics: ^11.3.3
+  permission_handler: ^11.3.1
+  cupertino_icons: ^1.0.8
+  change_app_package_name: ^1.4.0
+  fluttertoast: ^8.2.8
+  url_launcher: ^6.0.2
+  firebase_storage: ^12.3.3
+  image_picker: ^1.1.2
+  provider: ^6.1.2
+  modal_progress_hud_nsn: ^0.5.1
+  flutter_chat_bubble: ^2.0.2
+
+
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: "^0.14.1"
+
+flutter_launcher_icons:
+  ios: true
+  remove_alpha_ios: true
+  android: false
+  image_path: "assets/launcher_icon-playstore.png"
+  min_sdk_android: 21
+  web:
+    generate: true
+    image_path: "assets/launcher_icon-playstore.png"
+    background_color: "#hexcode"
+    theme_color: "#hexcode"
+  windows:
+    generate: true
+    image_path: "assets/launcher_icon-playstore.png"
+    icon_size: 48
+  macos:
+    generate: true
+    image_path: "assets/launcher_icon-playstore.png"
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/fonts/
+    - assets/images/
+    - assets/icons/
+    - assets/cards/back/
+    - assets/cards/front/
+    - assets/launcher_icon-playstore.png
+    - assets/menu_photo/
+
+  fonts:
+    - family: NotoSansKR
+      fonts:
+        - asset: assets/fonts/NotoSansKR-Regular.ttf
+        - asset: assets/fonts/NotoSansKR-Thin.ttf
+        - asset: assets/fonts/NotoSansKR-Bold.ttf
